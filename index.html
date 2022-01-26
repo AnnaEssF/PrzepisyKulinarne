@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrzepisyKulinarne</title>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="brand">
+                <a href="index.html">PrzepisyKulinarne<i class="fas fa-pepper-hot" aria-hidden="true"></i></a>
+            </div>
+            <div class="subscribe">
+                <button id="subscribe-button" class="subscribe-button-before open-subscribe">Rejestracja</button>
+            </div>
+        </div>
+        <!-- search bar -->
+        <div class="search">
+            <div class="search-text-grid">
+                <p class="search-text">Wyszukaj przepisy według tytułu i według składnika</p>
+            </div>
+            <div class="searchForm-grid">
+                <form id="searchForm">
+                    <input id="searchInput" type="text" name="searchBar">
+                </form>
+                <div class="form-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="search-suggestion">
+            <div class="search-suggestion-container">
+                <div class="number-recipes">
+                    <h1><span>40,000</span>Przepisów</h1>
+                </div>
+                <div class="by-ingredient" onclick="writeToDocument('fish')">
+                    <div class="suggestion-text">
+                        <p>Ryba</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-fish" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="winter" onclick="writeToDocument('winter')">
+                    <div class="suggestion-text">
+                        <p>Zimowe</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon far fa-snowflake"
+                            aria-hidden="true"></i></div>
+                </div>
+                <div class="vegetarian" onclick="writeToDocument('vegetarian')">
+                    <div class="suggestion-text">
+                        <p>Veganskie</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-carrot" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="deserts" onclick="writeToDocument('deserts')">
+                    <div class="suggestion-text">
+                        <p> Desery</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-birthday-cake"
+                            aria-hidden="true"></i></div>
+                </div>
+                <div class="lunch" onclick="writeToDocument('main-course')">
+                    <div class="suggestion-text">
+                        <p>Dania Gówne</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-utensils"
+                            aria-hidden="true"></i></div>
+                </div>
+                <div class="cookies" onclick="writeToDocument('cookie')">
+                    <div class="suggestion-text">
+                        <p>Ciastka</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-cookie" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=recipes-highlight>
+            <h2>Życie jest za krótkie na nudne jedzenie</h2>
+            <img src="pasta.jpg" alt="Tajin">
+            <div class="allergens-recipes">
+                <h3> Przepisy przyjazne dla alergików</h3>
+                <hr class="hr-allergens-recipes">
+                <ul class="allergens">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Bez soi</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Bez nabiału</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Bez jajek</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Bez orzeszków</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Bez skorupiaków</li>
+                </ul>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <p>
+                    <a class="anchor-tag-footer" href="index.html"><span>Przepisy</span>Kulinarne<i
+                            class="fas fa-pepper-hot"></i></a>
+                </p>
+            </div>
+            <div class="footer-subscribe open-subscribe footer-item">
+                <p class="footer-item">
+                    Reajestracja
+                </p>
+            </div>
+            <div id="contact" class="footer-email">
+                <p class="footer-item">Kontact</p>
+            </div>
+            <div class="social-media-message">
+                <p class="footer-item"> Media</p>
+            </div>
+            <div class="facebook social-media">
+                <a href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="instagram social-media">
+                <a href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="youtube social-media">
+                <a href="https://www.youtube.com " target="_blank"><i
+                        class="fab fa-youtube footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="copyright">
+                <p class="footer-item">2022 PrzepisyKulinarne. Wszelkie prawa zastrzeżone</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
